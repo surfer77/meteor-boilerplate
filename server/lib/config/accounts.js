@@ -1,5 +1,19 @@
 // Set up login services
 Meteor.startup(function() {
+
+
+    //Add twitter configuration Entry
+    ServiceConfiguration.configurations.update(
+        { service: "twitter" },
+        { $set: {
+            consumerKey: "XXXXXXXXXXXX",
+            secret: "XXXXXXXX"
+          }
+        },
+        { upsert: true }
+      );
+
+
   // Add Facebook configuration entry
   /*
   ServiceConfiguration.configurations.update(
@@ -24,8 +38,8 @@ Meteor.startup(function() {
     },
     { upsert: true }
   );
-  */
-
+*/
+  /*
   // Add Google configuration entry
   ServiceConfiguration.configurations.update(
     { service: "google" },
@@ -37,9 +51,11 @@ Meteor.startup(function() {
     },
     { upsert: true }
   );
+  */
 
-  // Add Linkedin configuration entry
   /*
+  // Add Linkedin configuration entry
+
   ServiceConfiguration.configurations.update(
     { service: "linkedin" },
     { $set: {
@@ -49,5 +65,7 @@ Meteor.startup(function() {
     },
     { upsert: true }
   );
+
+
   */
 });

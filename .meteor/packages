@@ -8,8 +8,8 @@ zimme:iron-router-active
 accounts-password
 less
 useraccounts:bootstrap
-accounts-google
 service-configuration
 twbs:bootstrap
 
 iron:router
+accounts-twitter
