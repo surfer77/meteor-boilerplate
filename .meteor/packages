@@ -13,3 +13,4 @@ twbs:bootstrap
 
 iron:router
 accounts-twitter
+useraccounts:iron-routing
